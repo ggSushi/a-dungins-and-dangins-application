@@ -1,4 +1,5 @@
 import React from 'react';
+import {useSelector} from 'react-redux'
 
 // This is one of our simplest components
 // It doesn't have local state
@@ -6,9 +7,11 @@ import React from 'react';
 // or even care what the redux state is
 
 function InfoPage() {
+  const user = useSelector(store => store.user);
+
   return (
     <div className="container">
-      <p>Info Page</p>
+      <h2>{user.username}'s Info</h2>
     </div>
   );
 }

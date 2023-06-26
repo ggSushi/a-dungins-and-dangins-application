@@ -3,6 +3,9 @@ body,
 #react-root {
   height: 100%;
 }
+#content-div {
+  margin-left: 80px;
+}
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

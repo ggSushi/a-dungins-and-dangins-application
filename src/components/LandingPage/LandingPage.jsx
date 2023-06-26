@@ -2,64 +2,50 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import './LandingPage.css';
 
-// CUSTOM COMPONENTS
-import RegisterForm from '../RegisterForm/RegisterForm';
-
 function LandingPage() {
-  const [heading, setHeading] = useState('Welcome');
+  const [heading, setHeading] = useState('Greetings, Traveler!');
   const history = useHistory();
-
-  const onLogin = (event) => {
-    history.push('/login');
-  };
 
   return (
     <div className="container">
       <h2>{heading}</h2>
 
-      <div className="grid">
-        <div className="grid-col grid-col_8">
+      <div>
+        <div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            id felis metus. Vestibulum et pulvinar tortor. Morbi pharetra lacus
-            ut ex molestie blandit. Etiam et turpis sit amet risus mollis
-            interdum. Suspendisse et justo vitae metus bibendum fringilla sed
-            sed justo. Aliquam sollicitudin dapibus lectus, vitae consequat odio
-            elementum eget. Praesent efficitur eros vitae nunc interdum, eu
-            interdum justo facilisis. Sed pulvinar nulla ac dignissim efficitur.
-            Quisque eget eros metus. Vestibulum bibendum fringilla nibh a
-            luctus. Duis a sapien metus.
+            What brings you to these parts of the Sword Coast? Heading off on an 
+            adventure for glory and fame, or perhaps searching the world for it's 
+            riches and hidden secrets? Whatever the case, you must be eager for 
+            your journey to begin, hmm? Well, before you do, make sure you've 
+            prepared with a goodnight's rest and a hearty meal. Hopefully you 
+            make some friends and allies along the way, or at least, I hope your journey 
+            is in decent company. It can be a strange, dangerous world out there; 
+            better to not go alone.
           </p>
 
           <p>
-            Praesent consectetur orci dui, id elementum eros facilisis id. Sed
-            id dolor in augue porttitor faucibus eget sit amet ante. Nunc
-            consectetur placerat pharetra. Aenean gravida ex ut erat commodo, ut
-            finibus metus facilisis. Nullam eget lectus non urna rhoncus
-            accumsan quis id massa. Curabitur sit amet dolor nisl. Proin
-            euismod, augue at condimentum rhoncus, massa lorem semper lacus, sed
-            lobortis augue mi vel felis. Duis ultrices sapien at est convallis
-            congue.
+            There are some great places to stay whenever you pull into a city or 
+            town. Ain't nobody and no place better to tell your tales and rest your 
+            heads than with a barkeep at your local Inn, I can tell you that, haha! 
+            You can certainly gather yourself some local jobs and rumors from them too, 
+            so you'll never run out of things to do! Perhaps you'll find yourself on your
+            own unique adventure along the way! Make sure to stop by and let me know 
+            how those go, yeah?
           </p>
 
           <p>
-            Fusce porta diam ac tortor elementum, ut imperdiet metus volutpat.
-            Suspendisse posuere dapibus maximus. Aliquam vitae felis libero. In
-            vehicula sapien at semper ultrices. Vivamus sed feugiat libero. Sed
-            sagittis neque id diam euismod, ut egestas felis ultricies. Nullam
-            non fermentum mauris. Sed in enim ac turpis faucibus pretium in sit
-            amet nisi.
+            Anyway, come and kick your feet up. I'll go grab you your drink, 
+            and once you're ready and registered, head on up into your room and record your 
+            journey thus far. And feel free to take a look at the Visitor's Records. 
+            Perhaps you might be able to gather hints and leads for yourselves in them!
           </p>
-        </div>
-        <div className="grid-col grid-col_4">
-          <RegisterForm />
 
-          <center>
-            <h4>Already a Member?</h4>
-            <button className="btn btn_sizeSm" onClick={onLogin}>
-              Login
-            </button>
-          </center>
+          <p>
+            I wish you the best of luck, adventurer.
+          </p>
+          <p>
+            <i> And welcome to the Sword Coast~</i>
+          </p>
         </div>
       </div>
     </div>
